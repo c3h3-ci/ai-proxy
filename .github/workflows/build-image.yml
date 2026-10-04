@@ -67,7 +67,7 @@ jobs:
           # GHCR 要求 repository name 全小写，owner 一旦含大写就会失败：
           #   invalid tag "ghcr.io/Owner/amd64-ai-proxy:1.1.0b13":
           #   repository name must be lowercase
-          # 当前 owner（c3h3-ci）本身已是小写，显式传仍然更稳妥：
+          # 当前 owner（C3H3-AI 对应 GHCR 小写 c3h3-ai）本身已是小写，显式传仍然更稳妥：
           # 迁移/改名时只需改这一处，不必等 CI 报错才发现。
           registry-prefix: ghcr.io/c3h3-ci
 
